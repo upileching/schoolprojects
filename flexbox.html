@@ -1,0 +1,54 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<style>
+    *{
+        margin: 0;
+        box-sizing: border-box;
+    }
+    body{
+        --border-color: #dddddd;
+        --font-color:white;
+        --background-color: blueviolet;
+        font-family:Arial, Helvetica, sans-serif;
+        font-weight: 500;
+    }
+    .container{
+        flex-wrap: wrap;
+        display: flex;
+        flex-direction: row;
+        border: 1px solid var(--border-color);
+        padding: 0.9rem;
+    }
+    .component{
+        color: var(--font-color);
+        padding: 1.5rem;
+        font-size: 3rem;
+        margin: 0.5rem;
+        text-align: center;
+        height: 6rem;
+        width: 10rem;
+        background-color: var(--background-color);
+    }
+    .one{
+        flex-grow: 0;
+    }
+    .two{
+        flex-grow: 2;
+    }
+    .three{
+        flex-grow: 0;
+    }
+</style>
+<body>
+    <div class="container">
+        <div class="component">1</div>
+        <div class="component">2</div>
+        <div class="component">3</div>
+    </div>
+</body>
+</html>

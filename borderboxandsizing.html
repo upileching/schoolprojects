@@ -1,0 +1,33 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>border box and border sizing</title>
+</head>
+<style>
+    *{
+        margin: 0;
+    }
+    body{
+        --color: #333333;
+        --border-color: rgb(151, 201, 244);
+        --background-color: rgb(122, 183, 2737)
+        font-family: arial, helvetica, sans-serif;
+        font-weight: 500;
+        margin: 0.3rem;
+    }
+    .container{
+        box-sizing: border-box;
+        background-color: var(--background-color);
+        margin: 10px;
+        padding: 4px;
+        width: 300px;
+        height: 30vh;
+        border: 2px solid var(--border-color);
+    }
+</style>
+<body>
+    <div class="container"></div>
+</body>
+</html>
