@@ -1,0 +1,60 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<style>
+    *{
+        margin: 0;
+        box-sizing: border-box;
+    }
+    body{
+        height: 100vh;
+        --border-color: #dddddd;
+        --font-color: #fff;
+        background-color: rgb(240, 242, 245);
+        font-family: Arial, Helvetica, sans-serif;
+        font-weight: 500;
+        display: flex;
+        flex-direction: row;
+        justify-content: center;
+    }
+    .container{
+        background-color: #ffffff;
+        padding: 4rem;
+        margin-top: 30vh;
+        height: 40vh;
+        box-shadow: rgba(149, 157, 165, 0.2) 0px 8px 24px;
+
+    }
+    .container input{
+        border: 0.1rem solid #00aeff61;
+        background-color: #00acff42;
+        min-width: 20rem;
+        padding: 0.75rem 0.75rem;
+        margin: 0.5rem 0;
+        box-sizing: border-box;
+
+    }
+    .container button{
+        padding: 0.8rem 0.8rem;
+        min-width: 20rem;
+        text-align: center;
+        background-color: #21aaeee1;
+        border: 0.1rem solid #e6f7ff;
+    }
+</style>
+<body>
+    <div class="container">
+        <form action="">
+            <label for="username"> username </label><br/>
+            <input type="text" name="username" /><br />
+            <label for="passwors"> password </label><br/>
+            <input type="password" name="password" /><br />
+            <button type="submit">login</button>
+        </form>
+    </div>
+</body>
+</html>
